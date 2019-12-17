@@ -1,0 +1,24 @@
+.header{
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    height: 59px;
+    width:auto;
+    h1{
+        font-size: 1.85rem;
+        
+    }
+    a{
+        text-decoration: none;
+        color:rgba(0,0,0,.80);
+        margin:1.25rem;
+    }
+
+    .homecontainer{
+        display: block;
+    }
+    .navbarcontainer{
+        display: flex;
+        justify-content:space-evenly;
+    }
+}
