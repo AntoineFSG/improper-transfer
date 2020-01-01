@@ -1,0 +1,29 @@
+.mainPostContainer{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.postContainer{
+@media screen and (max-width:274px) {
+   width: 175px; 
+   margin:.5rem;
+}
+position: relative;
+    min-width:250px;
+    max-width:500px;
+    min-height:5rem;
+    
+    border:2px solid red;
+    margin:1rem;
+    img{
+        position:relative;
+    }
+    h2{
+        position: absolute;
+        transform: translateY(-100%);
+        
+        z-index:98;
+    }
+}

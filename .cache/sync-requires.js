@@ -5,10 +5,10 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
+  "component---src-templates-page-js": hot(preferDefault(require("/Users/antoineroy/devcode/improper-transfer/src/templates/page.js"))),
+  "component---src-templates-post-js": hot(preferDefault(require("/Users/antoineroy/devcode/improper-transfer/src/templates/post.js"))),
   "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/antoineroy/devcode/improper-transfer/.cache/dev-404-page.js"))),
-  "component---src-pages-about-js": hot(preferDefault(require("/Users/antoineroy/devcode/improper-transfer/src/pages/about.js"))),
-  "component---src-pages-contact-js": hot(preferDefault(require("/Users/antoineroy/devcode/improper-transfer/src/pages/contact.js"))),
-  "component---src-pages-index-js": hot(preferDefault(require("/Users/antoineroy/devcode/improper-transfer/src/pages/index.js"))),
-  "component---src-pages-404-js": hot(preferDefault(require("/Users/antoineroy/devcode/improper-transfer/src/pages/404.js")))
+  "component---src-pages-404-js": hot(preferDefault(require("/Users/antoineroy/devcode/improper-transfer/src/pages/404.js"))),
+  "component---src-pages-index-js": hot(preferDefault(require("/Users/antoineroy/devcode/improper-transfer/src/pages/index.js")))
 }
 
