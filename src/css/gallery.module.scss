@@ -1,0 +1,12 @@
+
+.imagesContainer{ 
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+    div{
+        margin:1rem;
+        min-width: 180px;
+        max-width: 380px;
+
+    }
+}

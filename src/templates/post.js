@@ -3,17 +3,26 @@ import { graphql} from "gatsby"
 import Parser from "../components/parser"
 import Img from "gatsby-image"
 import postStyles from "../css/post.module.scss"
-import Layout from "../components/layout";
+import Layout from "../components/layout"
+import Gallery from "../components/gallery"
 
 const Post= (props)=>{
     const StaticPage = props.data.wordpressPost
     let featuredImg = undefined
-    let inlineImage = undefined
+    let acf = undefined
+    let acfArr= []
     if (StaticPage.featured_media) {
         featuredImg = StaticPage.featured_media.localFile.childImageSharp.fluid
     }
     if (StaticPage.acf){
-        inlineImage = StaticPage.acf.inline_image_1.localFile.childImageSharp.fluid
+        acf = StaticPage.acf
+        
+        Object.entries(acf).forEach((inline) =>{
+          if (inline!==false){
+              acfArr.push(inline[1])
+          }else{return}
+        })
+        console.log(acfArr)
     }
     return (
     <Layout>
@@ -22,7 +31,7 @@ const Post= (props)=>{
         <h1><Parser data={StaticPage.title}/></h1>
         <div className={postStyles.content}>
         <Parser data={StaticPage.content}/>
-        {inlineImage && <Img className={postStyles.inline_image} alt= {StaticPage.slug} fluid={inlineImage} />}
+        {acf && <Gallery acfArr={acfArr}/>}
         </div>
 
       </div>
@@ -33,14 +42,51 @@ export default Post
 export const pageQuery = graphql`
   query($id: String!) {
     wordpressPost(id: { eq: $id }) {
+      id
       title
       content
       slug
       acf {
-        inline_image_1 {
-          localFile {
-            childImageSharp {
-              fluid {
+        inline_image_1{
+          localFile{
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        inline_image_2{
+          localFile{
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        inline_image_3{
+          localFile{
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        inline_image_4{
+          localFile{
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        inline_image_5{
+          localFile{
+            childImageSharp{
+              fluid{
                 ...GatsbyImageSharpFluid
               }
             }
