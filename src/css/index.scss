@@ -1,11 +1,20 @@
 /*Variables*/
 $primary:rgba(0,0,0,.78);
+
+body{
+    font-family: "Roboto";
+    font-weight: 400;
+    color: $primary;
+}
+h1{
+    font-weight: 700; 
+}
+
 /*Reset Styles*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -39,7 +48,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
 }
 
 ol, ul {

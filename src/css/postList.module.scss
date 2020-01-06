@@ -10,13 +10,15 @@
    width: 175px; 
    margin:.5rem;
 }
-position: relative;
+    position: relative;
     min-width:250px;
     max-width:500px;
     min-height:5rem;
     
-    border:2px solid red;
+    -webkit-box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4); 
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
     margin:1rem;
+
     img{
         position:relative;
     }

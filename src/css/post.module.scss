@@ -1,6 +1,14 @@
 .post{
-max-width: 1024px;
+    max-width: 1024px;
     margin: 2rem;
+    h1{
+        font-family: "Roboto"; 
+    }
+
+}
+.content{
+    font-family: "Roboto";
+    line-height: 1.5em;
 }
 .featured_image{
     max-width:300px;

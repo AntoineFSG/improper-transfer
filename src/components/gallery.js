@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import Img from 'gatsby-image'
 import galleryStyles from '../css/gallery.module.scss'
+import GalleryItem from "../components/galleryItem.js"
 
 
 class Gallery extends Component {
@@ -9,8 +9,9 @@ class Gallery extends Component {
       return (
         <div className={galleryStyles.imagesContainer}>
           {acfArr.map((image) => (
-               <div style={{width:'100%', height:'100%'}}>{image && <Img className={galleryStyles.inlineImage} key={Math.floor(Math.random()*1233)} fluid={image.localFile.childImageSharp.fluid}/>}</div>
-               
+              <div>
+                {image &&<GalleryItem key={Math.floor(Math.random()*333)+'GALLERY'+acfArr.indexOf(image)} fluid={image.localFile.childImageSharp.fluid}/>}
+              </div>
           ))}
         </div>
       )

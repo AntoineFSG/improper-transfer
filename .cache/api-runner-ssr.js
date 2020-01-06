@@ -2,6 +2,12 @@ var plugins = [{
       plugin: require('/Users/antoineroy/devcode/improper-transfer/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      plugin: require('/Users/antoineroy/devcode/improper-transfer/node_modules/gatsby-plugin-theme-ui/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/Users/antoineroy/devcode/improper-transfer/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
+      options: {"plugins":[],"fonts":[{"family":"Roboto","variants":["400","700"]}]},
+    },{
       plugin: require('/Users/antoineroy/devcode/improper-transfer/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"improper","start_url":"/","background_color":"#ffffff","theme_color":"#ffffff","display":"minimal-ui","icon":"src/images/IMPROPER-logo-2015.png"},
     }]
