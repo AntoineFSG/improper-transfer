@@ -25,7 +25,7 @@ Improper Transfer
  4. **Navigate into your new site’s directory and start it up**
 
     
-    cd improper-transfer
-    gatsby develop
+    $cd improper-transfer
+    $gatsby develop
     
 
