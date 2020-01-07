@@ -28,4 +28,8 @@ Improper Transfer
     $cd improper-transfer
     $gatsby develop
     
+  5.**Check in your browser**
+  
+       go to http://localhost:8000/
+    
 
