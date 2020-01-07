@@ -6,20 +6,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-theme-ui`,
-    `gatsby-plugin-typescript`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            variants: [`400`, `700`]
-          },
-        ],
-      },
-    },
- 
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -47,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Improper Design`,
+        name: `gatsby-starter-default`,
         short_name: `improper`,
         start_url: `/`,
         background_color: `#ffffff`,

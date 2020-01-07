@@ -1,112 +1,32 @@
 {
   "stages": {
     "develop": {
-      "plugins": [
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
-          "options": {}
-        }
-      ],
-      "presets": [
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/preset-typescript/lib/index.js",
-          "options": {
-            "plugins": []
-          }
-        }
-      ],
+      "plugins": [],
+      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
       }
     },
     "develop-html": {
-      "plugins": [
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
-          "options": {}
-        }
-      ],
-      "presets": [
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/preset-typescript/lib/index.js",
-          "options": {
-            "plugins": []
-          }
-        }
-      ],
+      "plugins": [],
+      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
       }
     },
     "build-html": {
-      "plugins": [
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
-          "options": {}
-        }
-      ],
-      "presets": [
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/preset-typescript/lib/index.js",
-          "options": {
-            "plugins": []
-          }
-        }
-      ],
+      "plugins": [],
+      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
       }
     },
     "build-javascript": {
-      "plugins": [
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
-          "options": {}
-        }
-      ],
-      "presets": [
-        {
-          "name": "/Users/antoineroy/devcode/improper-transfer/node_modules/@babel/preset-typescript/lib/index.js",
-          "options": {
-            "plugins": []
-          }
-        }
-      ],
+      "plugins": [],
+      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
