@@ -9,7 +9,7 @@ var plugins = [{
       options: {"plugins":[],"fonts":[{"family":"Roboto","variants":["400","700"]}]},
     },{
       plugin: require('/Users/antoineroy/devcode/improper-transfer/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"improper","start_url":"/","background_color":"#ffffff","theme_color":"#ffffff","display":"minimal-ui","icon":"src/images/IMPROPER-logo-2015.png"},
+      options: {"plugins":[],"name":"Improper Design","short_name":"improper","start_url":"/","background_color":"#ffffff","theme_color":"#ffffff","display":"minimal-ui","icon":"src/images/IMPROPER-logo-2015.png"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
