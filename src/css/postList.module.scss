@@ -24,8 +24,9 @@
     }
     h2{
         position: absolute;
-        transform: translateY(-100%);
-        
+        transform: translateY(-150%);
+        margin:5px;
+        color:white;
         z-index:98;
     }
 }

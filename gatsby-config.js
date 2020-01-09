@@ -17,7 +17,7 @@ module.exports = {
        * The base URL of the WordPress site without the trailingslash and the protocol. This is required.
        * Example : 'dev-gatbsyjswp.pantheonsite.io' or 'www.example-site.com'
        */
-      baseUrl: `http://a-roy.me/gatsby/wordpress/`,
+      baseUrl: `http://a-roy.me/gatsby/wordpress`,
       protocol: `http`,
       hostingWPCOM: false,
       useACF: true,
@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/IMPROPER-logo-2015.png`, // This path is relative to the root of the site.
+        icon: `src/images/IMPROPER-logo-2015short.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

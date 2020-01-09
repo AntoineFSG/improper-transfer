@@ -36,14 +36,17 @@ const Post= (props)=>{
     return (
     <Layout>
       <div className={postStyles.post}>
-        {featuredImg && <Img className={postStyles.featured_image} alt= {StaticPage.slug} fluid={featuredImg} />}
         <h1><Parser data={StaticPage.title}/></h1>
-        <div className={postStyles.content}>
-        <Parser data={StaticPage.content}/>
         <SlideShow slides={slideArr}/>
-        {acf && <Gallery acfArr={inlineArr}/>}
+        <div className={postStyles.content}>
+          <div className={postStyles.imageContainer}>
+          {featuredImg && <Img alt= {StaticPage.slug} fluid={featuredImg} />}
+          </div>
+          <div className={postStyles.article}>
+          <Parser data={StaticPage.content}/>
+          </div>
         </div>
-
+        {acf && <Gallery acfArr={inlineArr}/>}
       </div>
     </Layout>
     )
@@ -104,7 +107,7 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fluid{
+              fluid(maxHeight: 550){
                 ...GatsbyImageSharpFluid
               }
             }
@@ -114,7 +117,7 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fluid{
+              fluid(maxHeight: 550){
                 ...GatsbyImageSharpFluid
               }
             }
@@ -124,7 +127,7 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fluid{
+              fluid(maxHeight: 550){
                 ...GatsbyImageSharpFluid
               }
             }
@@ -134,7 +137,7 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fluid{
+              fluid(maxHeight: 550){
                 ...GatsbyImageSharpFluid
               }
             }
@@ -144,7 +147,7 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fluid{
+              fluid(maxHeight: 550){
                 ...GatsbyImageSharpFluid
               }
             }

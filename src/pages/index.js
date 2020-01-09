@@ -36,9 +36,8 @@ const IndexPage = () => {
   <Layout data={pages}>
     <Head pageTitle="Home"/>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <h1>Check my work!</h1>
-                <PostList data={posts}/>
+    <h1>The work of  Ian McGillivray</h1>
+    <PostList data={posts}/>
   </Layout>
 )}
 

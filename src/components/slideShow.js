@@ -16,9 +16,12 @@ const SlideShow = (props)=>{
   return (
     <div className={slideShowStyles.slideShow}>
         <button className={slideShowStyles.previous} onClick={() => handlePrevious()}>&#60;</button>
-        <div className={slideShowStyles.slidesContainer}>
-            <Img
-            key={node.localFile.id} fluid={node.localFile.childImageSharp.fluid}
+        <div className={slideShowStyles.slidesContainer} style={{height: `550px`, width:'650px'}}>
+            <Img className={slideShowStyles.slideImage} 
+            key={node.localFile.id} fluid={node.localFile.childImageSharp.fluid} 
+            style={{
+            height: '100%'
+            }}
             />
         </div>
         <button className={slideShowStyles.next} onClick={() => handleNext()}>&#62;</button>

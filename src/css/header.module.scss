@@ -1,5 +1,7 @@
 .header{
-    background:grey;
+    background:white;
+    -webkit-box-shadow: 0px 0px 7px -4px rgba(0,0,0,0.69); 
+    box-shadow: 0px 0px 7px -4px rgba(0,0,0,0.69);
     display: flex;
     justify-content: space-between;
     height: 49px;
@@ -23,6 +25,12 @@
         display: flex;
         align-content: center;
         height:100%;
+        img{
+            width:47px;
+            position :absolute;
+            top:5px;
+            left:15px;
+        }
     }
     .navbarcontainer{
         display: flex;

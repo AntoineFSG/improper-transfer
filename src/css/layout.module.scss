@@ -1,7 +1,7 @@
 .main{
     display:flex;
     flex-direction: column;
-    min-height: 100vh;
+    
     
     h1{
         font-size: 2rem;
@@ -9,6 +9,7 @@
 
 }
 content{
+    min-height:90vh;
     margin:0 auto;
     a{
         text-decoration: none;
