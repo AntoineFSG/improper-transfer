@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import headerStyles from "../css/header.module.scss"
-import logo from "../images/improper-logo-2015short.png"
+//import logo from "../images/improper-logo-2015short.png"
 
 
 const Header = (props) => {
@@ -9,7 +9,7 @@ const Header = (props) => {
   return (
       <div className={headerStyles.header}>
         <div className={headerStyles.homecontainer}><Link to="/">
-          <img src={logo}/></Link>
+          logo </Link>
         </div>
         <div className={headerStyles.navbarcontainer}>
         {data.edges.map(({ node }) => (
