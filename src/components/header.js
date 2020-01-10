@@ -9,7 +9,7 @@ const Header = (props) => {
   return (
       <div className={headerStyles.header}>
         <div className={headerStyles.homecontainer}><Link to="/">
-          logo </Link>
+          Improper Design</Link>
         </div>
         <div className={headerStyles.navbarcontainer}>
         {data.edges.map(({ node }) => (
