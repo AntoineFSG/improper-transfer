@@ -25,11 +25,15 @@
         display: flex;
         align-content: center;
         height:100%;
-        img{
+        .logo{
             width:47px;
             position :absolute;
-            top:5px;
+            top:0px;
+            margin-top: -.7rem;
             left:15px;
+        }
+        a{
+            outline:0;
         }
     }
     .navbarcontainer{
