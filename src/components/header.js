@@ -1,18 +1,20 @@
 import { Link } from "gatsby"
 import React from "react"
 import headerStyles from "../css/header.module.scss"
-//import logo from "../images/improper-logo-2015short.png"
+import Img from "gatsby-image"
 
 
 const Header = (props) => {
-  const data = props.data
+  const pagesData = props.pagesData
+  const siteMetadata= props.siteMetadata
+  const logo = props.logo
   return (
       <div className={headerStyles.header}>
         <div className={headerStyles.homecontainer}><Link to="/">
-          Improper Design</Link>
+          <Img className={headerStyles.logo} alt={siteMetadata.title} fluid={logo}/></Link>
         </div>
         <div className={headerStyles.navbarcontainer}>
-        {data.edges.map(({ node }) => (
+        {pagesData.edges.map(({ node }) => (
               <div key={node.slug}>
                 <Link to={node.slug}>
                   <h2>{node.title}</h2>
