@@ -13,7 +13,22 @@ import layoutStyles from "../css/layout.module.scss"
 
 const Layout = (props) => {
   const data = useStaticQuery(graphql`
-  query SiteTitleQuery {
+  query SiteQuery {
+      file(name: {eq: "logo"}) {
+        name
+        childImageSharp {
+          fluid{
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    site {
+      siteMetadata {
+        title
+        description
+        author
+      }
+    }
     wordpressSiteMetadata {
       name
     }
@@ -31,9 +46,9 @@ const Layout = (props) => {
 
   return (
     <div className={layoutStyles.main}>
-      <Header data={data.allWordpressPage} siteTitle={data.wordpressSiteMetadata.name} />
+      <Header logo={data.file.childImageSharp.fluid} pagesData={data.allWordpressPage} wordpressSiteTitle={data.wordpressSiteMetadata.name} siteMetadata={data.site.siteMetadata} />
       <content>{props.children}</content>
-       <Footer/>
+       <Footer siteMetadata={data.site.siteMetadata}/>
     </div>
   )
 }
