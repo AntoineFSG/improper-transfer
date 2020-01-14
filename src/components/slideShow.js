@@ -7,7 +7,6 @@ const SlideShow = (props)=>{
   const slides= props.slides;
   //Minus 1 for array offset from 0
   const length = slides.length - 1
-  console.log('Sliiiiiiide'+slides[0])
   const handleNext = () =>
     index === length ? setIndex(0) : setIndex(index + 1)
   const handlePrevious = () =>
@@ -16,12 +15,9 @@ const SlideShow = (props)=>{
   return (
     <div className={slideShowStyles.slideShow}>
         <button className={slideShowStyles.previous} onClick={() => handlePrevious()}>&#60;</button>
-        <div className={slideShowStyles.slidesContainer} style={{height: `550px`, width:'650px'}}>
+        <div className={slideShowStyles.slidesContainer}>
             <Img className={slideShowStyles.slideImage} 
-            key={node.localFile.id} fluid={node.localFile.childImageSharp.fluid} 
-            style={{
-            height: '100%'
-            }}
+            key={node.localFile.id} fixed={node.localFile.childImageSharp.fixed} 
             />
         </div>
         <button className={slideShowStyles.next} onClick={() => handleNext()}>&#62;</button>

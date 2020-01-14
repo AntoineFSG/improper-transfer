@@ -35,8 +35,8 @@ const IndexPage = () => {
   return(
   <Layout data={pages}>
     <Head pageTitle="Home"/>
-    <SEO title="Home" />
-    <h1>The work of  Ian McGillivray</h1>
+    <SEO title="Home of Improper design" />
+    <h1 style={{marginTop:60}}>The work of  Ian McGillivray</h1>
     <PostList data={posts}/>
   </Layout>
 )}

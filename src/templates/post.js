@@ -6,7 +6,8 @@ import postStyles from "../css/post.module.scss"
 import Layout from "../components/layout"
 import Gallery from "../components/gallery"
 import SlideShow from "../components/slideShow";
-
+import Head from "../components/head"
+import SEO from "../components/seo"
 
 const Post= (props)=>{
 
@@ -35,6 +36,9 @@ const Post= (props)=>{
     console.log(inlineArr)
     return (
     <Layout>
+      <Head pageTitle={StaticPage.title}/>
+      <SEO title={StaticPage.title} />
+        
       <div className={postStyles.post}>
         <h1><Parser data={StaticPage.title}/></h1>
         <SlideShow slides={slideArr}/>
@@ -107,8 +111,8 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fluid(maxHeight: 550){
-                ...GatsbyImageSharpFluid
+              fixed(height: 550){
+                ...GatsbyImageSharpFixed
               }
             }
           }
@@ -117,8 +121,8 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fluid(maxHeight: 550){
-                ...GatsbyImageSharpFluid
+              fixed(height: 550){
+                ...GatsbyImageSharpFixed
               }
             }
           }
@@ -127,8 +131,8 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fluid(maxHeight: 550){
-                ...GatsbyImageSharpFluid
+              fixed(height: 550){
+                ...GatsbyImageSharpFixed
               }
             }
           }
@@ -137,8 +141,8 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fluid(maxHeight: 550){
-                ...GatsbyImageSharpFluid
+              fixed(height: 550){
+                ...GatsbyImageSharpFixed
               }
             }
           }
@@ -147,8 +151,8 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fluid(maxHeight: 550){
-                ...GatsbyImageSharpFluid
+              fixed(height: 550){
+                ...GatsbyImageSharpFixed
               }
             }
           }

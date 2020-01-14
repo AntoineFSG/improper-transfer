@@ -12,7 +12,6 @@ class PostList extends Component {
 
     return (
       <>
-        <h1>Posts</h1>
         <div className={postListStyles.mainPostContainer}>
         {data.edges.map(({ node }) => (
           <div className={postListStyles.postContainer}key={node.slug}>
