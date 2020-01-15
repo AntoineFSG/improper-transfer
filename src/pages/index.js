@@ -24,6 +24,7 @@ const IndexPage = () => {
             id
             title
             slug
+            excerpt
           }
         }
       }

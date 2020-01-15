@@ -41,7 +41,7 @@ const Post= (props)=>{
         
       <div className={postStyles.post}>
         <h1><Parser data={StaticPage.title}/></h1>
-        <SlideShow slides={slideArr}/>
+        {slideArr[0]!=null && <SlideShow slides={slideArr}/>}
         <div className={postStyles.content}>
           <div className={postStyles.imageContainer}>
           {featuredImg && <Img alt= {StaticPage.slug} fluid={featuredImg} />}

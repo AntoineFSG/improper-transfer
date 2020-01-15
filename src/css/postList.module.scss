@@ -22,14 +22,34 @@ h1{
     box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
     margin:1rem;
 
-    img{
-        position:relative;
-    }
-    h2{
+    a.overLay{
+        opacity:0;
+        background: rgba(0,0,0,.8);
+        display:flex;
+        flex-direction: column;
         position: absolute;
-        transform: translateY(-150%);
-        margin:5px;
+        transform: translateY(-100%);
+        width:100%;
+        height:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    a.overLay:hover, a.overLay:focus{
+        opacity:1;
+    }
+    h2.title{
         color:white;
+        width:100%;
+        text-align: center;
         z-index:98;
+    }
+    p{
+        color:white;
+        width:100%;
+        text-align: center;
+        z-index:98;
+        font-size: 1rem;
+        margin-top:1rem;
+        font-weight: 400;
     }
 }

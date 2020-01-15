@@ -15,11 +15,12 @@ class PostList extends Component {
         <div className={postListStyles.mainPostContainer}>
         {data.edges.map(({ node }) => (
           <div className={postListStyles.postContainer}key={node.slug}>
-            <Link to={node.slug}>
-              {node.featured_media && <Img fluid={node.featured_media.localFile.childImageSharp.fluid}/>}
-              <h2>{node.title}</h2>
+          {node.featured_media && <Img fluid={node.featured_media.localFile.childImageSharp.fluid}/>}
+            <Link className={postListStyles.overLay} to={node.slug}>
+              <h2 className={postListStyles.title}>{node.title}</h2>
+              <p><Parser data={node.excerpt}/></p>
             </Link>
-            <h3><Parser data={node.excerpt}></Parser></h3>
+           
           </div>
         ))}
         </div>
