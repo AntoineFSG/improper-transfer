@@ -1,26 +1,34 @@
-
-.slideShow{
-    
-    display:flex;
-    border-top:2px solid black;
-    border-bottom:2px solid black;
-    justify-content: center;
-    .slidesContainer{
-        width:auto;
+.slideWrapper{
+    .imageContainer{
         margin:0 auto;
     }
-    
-    button{
-        background: transparent;
-        border:0;
-        font-size: 5rem;
+    .buttonsContainer{
+        text-align: center;
+        font-size: 3rem;
         color:royalblue;
-
-        .previous{
-
+        button:hover, button:focus{
+            background-color:royalblue;
+            color:white;
         }
-        .next{
+        button{ 
+            margin:1rem 2rem;
+            background: transparent;
+            border:0px 1px 1px 1px solid grey;
+            border-radius: .5rem;
+            
+            span{
+                height:2rem;
+                display: block;
+                transform: translateY(-50%);
+            }
             
         }
+        button.next{
+            
+        }
+        button.previous{
+
+        }
     }
+
 }

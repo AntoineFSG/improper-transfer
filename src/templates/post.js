@@ -13,6 +13,7 @@ const Post= (props)=>{
 
     const StaticPage = props.data.wordpressPost
     let featuredImg = undefined
+    if(!StaticPage.content){StaticPage.content=StaticPage.excerpt}
     let acf = undefined
     let acfArr= []
     
@@ -28,12 +29,12 @@ const Post= (props)=>{
               acfArr.push(inline[1])
           }else{return}
         })
-        console.log(acfArr)
         
     }
     let inlineArr=acfArr.slice(0,4);
     let slideArr=acfArr.slice(5,9);
-    console.log(inlineArr)
+
+    console.log(slideArr[0])
     return (
     <Layout>
       <Head pageTitle={StaticPage.title}/>
@@ -63,6 +64,7 @@ export const pageQuery = graphql`
       title
       content
       slug
+      excerpt
       acf{
         inline_image_1{
           id
@@ -111,8 +113,8 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fixed(height: 550){
-                ...GatsbyImageSharpFixed
+              fluid(maxHeight: 550){
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -121,8 +123,8 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fixed(height: 550){
-                ...GatsbyImageSharpFixed
+              fluid(maxHeight: 550){
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -131,8 +133,8 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fixed(height: 550){
-                ...GatsbyImageSharpFixed
+              fluid(maxHeight: 550){
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -141,8 +143,8 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fixed(height: 550){
-                ...GatsbyImageSharpFixed
+              fluid(maxHeight: 550){
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -151,8 +153,8 @@ export const pageQuery = graphql`
           localFile{
             id
             childImageSharp{
-              fixed(height: 550){
-                ...GatsbyImageSharpFixed
+              fluid(maxHeight: 550){
+                ...GatsbyImageSharpFluid
               }
             }
           }

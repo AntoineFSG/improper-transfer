@@ -13,16 +13,19 @@ const SlideShow = (props)=>{
     index === 0 ? setIndex(length) : setIndex(index - 1)
   const node = slides[index]
   return (
-    <div className={slideShowStyles.slideShow}>
-        <button className={slideShowStyles.previous} onClick={() => handlePrevious()}>&#60;</button>
-        <div className={slideShowStyles.slidesContainer}>
+    <div className={slideShowStyles.slideWrapper}>
+         <div className={slideShowStyles.imageContainer}>
             <Img className={slideShowStyles.slideImage} 
-            key={node.localFile.id} fixed={node.localFile.childImageSharp.fixed} 
+            style={{ maxHeight: "550px" }}
+            imgStyle={{ objectFit: "contain" }}
+            key={node.localFile.id} fluid={node.localFile.childImageSharp.fluid} 
             />
+          </div>
+        <div className={slideShowStyles.buttonsContainer}>
+          <button className={slideShowStyles.previous} onClick={() => handlePrevious()}><span>&#60;</span></button> 
+          <button className={slideShowStyles.next} onClick={() => handleNext()}><span>&#62;</span></button>
         </div>
-        <button className={slideShowStyles.next} onClick={() => handleNext()}>&#62;</button>
-      
     </div>
   )
-}
+}    
 export default SlideShow;

@@ -24,7 +24,7 @@ module.exports = {
        * The base URL of the WordPress site without the trailingslash and the protocol. This is required.
        * Example : 'dev-gatbsyjswp.pantheonsite.io' or 'www.example-site.com'
        */
-      baseUrl: `http://a-roy.me/gatsby/wordpress`,
+      baseUrl: `https://a-roy.me/gatsby/wordpress`,
       protocol: `http`,
       hostingWPCOM: false,
       useACF: true,
