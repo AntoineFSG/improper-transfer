@@ -1,16 +1,18 @@
 .slideWrapper{
+    border-top:2px solid black;
     .imageContainer{
         margin:0 auto;
     }
     .buttonsContainer{
         text-align: center;
         font-size: 3rem;
-        color:royalblue;
+        border-top:2px solid black;
         button:hover, button:focus{
             background-color:royalblue;
             color:white;
         }
         button{ 
+            color:royalblue;
             margin:1rem 2rem;
             background: transparent;
             border:0px 1px 1px 1px solid grey;
@@ -22,12 +24,6 @@
                 transform: translateY(-50%);
             }
             
-        }
-        button.next{
-            
-        }
-        button.previous{
-
         }
     }
 

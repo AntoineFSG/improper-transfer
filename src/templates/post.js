@@ -31,8 +31,8 @@ const Post= (props)=>{
         })
         
     }
-    let inlineArr=acfArr.slice(0,4);
-    let slideArr=acfArr.slice(5,9);
+    let inlineArr=acfArr.slice(0,11);
+    let slideArr=acfArr.slice(12,23);
 
     console.log(slideArr[0])
     return (
@@ -108,6 +108,95 @@ export const pageQuery = graphql`
             }
           }
         }
+        inline_image_5{
+          id
+          localFile{
+            id
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        inline_image_6{
+          id
+          localFile{
+            id
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        inline_image_7{
+          id
+          localFile{
+            id
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        inline_image_8{
+          id
+          localFile{
+            id
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        inline_image_9{
+          id
+          localFile{
+            id
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        inline_image_10{
+          id
+          localFile{
+            id
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        inline_image_11{
+          id
+          localFile{
+            id
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        inline_image_12{
+          id
+          localFile{
+            id
+            childImageSharp{
+              fluid{
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        
         
         slider_image_1{
           localFile{
@@ -159,7 +248,69 @@ export const pageQuery = graphql`
             }
           }
         }
+        slider_image_6{
+          localFile{
+            id
+            childImageSharp{
+              fluid(maxHeight: 550){
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        slider_image_7{
+          localFile{
+            id
+            childImageSharp{
+              fluid(maxHeight: 550){
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        slider_image_8{
+          localFile{
+            id
+            childImageSharp{
+              fluid(maxHeight: 550){
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        slider_image_9{
+          localFile{
+            id
+            childImageSharp{
+              fluid(maxHeight: 550){
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        slider_image_10{
+          localFile{
+            id
+            childImageSharp{
+              fluid(maxHeight: 550){
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        slider_image_11{
+          localFile{
+            id
+            childImageSharp{
+              fluid(maxHeight: 550){
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        
       }
+      
       
       featured_media {
         localFile {

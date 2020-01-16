@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Improper Design`,
-    description: ` The work of Ian .`,
+    description: ` The work of Ian McGillivray.`,
     author: `A&A`,
   },
   plugins: [
