@@ -2,4 +2,14 @@
     margin:1rem;
         min-width: 180px;
         max-width: 380px;
+        -webkit-box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4); 
+        box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
+        cursor: pointer;
+}
+.title{
+    transform: translateY(-50%);
+    padding: .25rem;
+    background: #66BC45;
+    color:white;
+    border-radius:9px 9px 0 0;
 }

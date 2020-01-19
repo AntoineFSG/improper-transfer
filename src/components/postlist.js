@@ -17,7 +17,7 @@ class PostList extends Component {
           <div className={postListStyles.postContainer}key={node.slug}>
           {node.featured_media && <Img fluid={node.featured_media.localFile.childImageSharp.fluid}/>}
             <Link className={postListStyles.overLay} to={node.slug}>
-              <h2 className={postListStyles.title}>{node.title}</h2>
+              <h2 className={postListStyles.title}><Parser data={node.title}/></h2>
               <p><Parser data={node.excerpt}/></p>
             </Link>
            

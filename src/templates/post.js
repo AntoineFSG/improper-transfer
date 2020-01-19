@@ -32,6 +32,7 @@ const Post= (props)=>{
         
     }
     let inlineArr=acfArr.slice(0,11);
+    console.log(inlineArr)
     let slideArr=acfArr.slice(12,23);
 
     console.log(slideArr[0])
@@ -67,6 +68,9 @@ export const pageQuery = graphql`
       excerpt
       acf{
         inline_image_1{
+          alt_text
+          title
+          description
           id
           localFile{
             id
@@ -78,6 +82,10 @@ export const pageQuery = graphql`
           }
         }
         inline_image_2{
+          alt_text
+          title
+          description
+          id
           localFile{
             id
             childImageSharp{
@@ -88,6 +96,10 @@ export const pageQuery = graphql`
           }
         }
         inline_image_3{
+          alt_text
+          title
+          description
+          id
           localFile{
             id
             childImageSharp{
@@ -98,6 +110,9 @@ export const pageQuery = graphql`
           }
         }
         inline_image_4{
+          alt_text
+          title
+          description
           id
           localFile{
             id
@@ -109,6 +124,9 @@ export const pageQuery = graphql`
           }
         }
         inline_image_5{
+          alt_text
+          title
+          description
           id
           localFile{
             id
@@ -120,6 +138,9 @@ export const pageQuery = graphql`
           }
         }
         inline_image_6{
+          alt_text
+          title
+          description
           id
           localFile{
             id
@@ -131,6 +152,9 @@ export const pageQuery = graphql`
           }
         }
         inline_image_7{
+          alt_text
+          title
+          description
           id
           localFile{
             id
@@ -142,6 +166,9 @@ export const pageQuery = graphql`
           }
         }
         inline_image_8{
+          alt_text
+          title
+          description
           id
           localFile{
             id
@@ -153,6 +180,9 @@ export const pageQuery = graphql`
           }
         }
         inline_image_9{
+          alt_text
+          title
+          description
           id
           localFile{
             id
@@ -164,6 +194,9 @@ export const pageQuery = graphql`
           }
         }
         inline_image_10{
+          alt_text
+          title
+          description
           id
           localFile{
             id
@@ -175,6 +208,9 @@ export const pageQuery = graphql`
           }
         }
         inline_image_11{
+          alt_text
+          title
+          description
           id
           localFile{
             id
@@ -186,6 +222,9 @@ export const pageQuery = graphql`
           }
         }
         inline_image_12{
+          alt_text
+          title
+          description
           id
           localFile{
             id

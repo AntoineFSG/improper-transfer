@@ -25,7 +25,7 @@ module.exports = {
        * Example : 'dev-gatbsyjswp.pantheonsite.io' or 'www.example-site.com'
        */
       baseUrl: `https://a-roy.me/gatsby/wordpress`,
-      protocol: `http`,
+      protocol: `https`,
       hostingWPCOM: false,
       useACF: true,
     }

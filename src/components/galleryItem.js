@@ -6,6 +6,8 @@ import galleryItemStyles from '../css/galleryItem.module.scss'
 
 const GalleryItem=(props)=>{
     const fluid = props.fluid;
+    const alt = props.alt;
+    const title= props.title;
     const [show, setShow] = useState(false);
     const showModal = e => {
         setShow(!show);
@@ -15,7 +17,8 @@ const GalleryItem=(props)=>{
         <div className={galleryItemStyles.imgContainer} onClick={e => {
             showModal(e);
        }}>
-            <Img fluid={fluid}/>
+            <p className={galleryItemStyles.title}>{title}</p>
+            <Img fluid={fluid} alt={alt}/>
             <Modal show={show}>
                 <Img fluid={fluid}/>
             </Modal>
