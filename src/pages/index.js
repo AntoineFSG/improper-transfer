@@ -25,19 +25,19 @@ const IndexPage = () => {
             title
             slug
             excerpt
+            date(formatString: "YYYYMMDD")
           }
         }
       }
     }
     `)
-  const pages = data.allWordpressPage
   const posts = data.allWordpressPost
 
   return(
-  <Layout data={pages}>
+  <Layout>
     <Head pageTitle="Home"/>
     <SEO title="Home of Improper design" />
-    <h1 style={{marginTop:60}}>The work of  Ian McGillivray</h1>
+    <h1>The <span>Design Work</span> of  Ian McGillivray</h1>
     <PostList data={posts}/>
   </Layout>
 )}

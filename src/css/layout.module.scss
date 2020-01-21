@@ -5,15 +5,20 @@
     
     h1{
         font-size: 2rem;
+        color:rgba(0,0,0,.72);
+    }
+    span{
+        color:grey;
+        font-weight:300;
     }
 
 }
 content{
     min-height:90vh;
-    margin:0 auto;
+    margin:80px auto;
+    
     a{
         text-decoration: none;
-        color:rgba(0,0,0,.82);
         font-size:1.25rem;
         transform: translateY(-100%);
         transform: translateX(10%);

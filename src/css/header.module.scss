@@ -38,6 +38,28 @@
     }
     .navbarcontainer{
         display: flex;
-        justify-content:space-evenly;
+        margin-right:2rem;
+        
+        div{
+
+            height:49px;
+            display:flex;
+            align-items: center;
+            
+            a{
+                display: block;
+                margin:0 auto;
+                padding:0 1rem;
+            }
+            a:hover,a:focus{
+                background: #66BC45;
+                color:white;
+            }
+        }
+        div:hover,div:focus{
+            background: #66BC45;
+            a{color:white;}
+
+        }
     }
 }

@@ -14,10 +14,13 @@ const Header = (props) => {
           <Img className={headerStyles.logo} alt={siteMetadata.title} fluid={logo}/></Link>
         </div>
         <div className={headerStyles.navbarcontainer}>
+        <div key="contact-form-improper">
+          <Link to="/contactMe">Contact</Link>
+        </div> 
         {pagesData.edges.map(({ node }) => (
               <div key={node.slug}>
                 <Link to={node.slug}>
-                  <h2>{node.title}</h2>
+                  {node.title}
                 </Link>
               </div>
             ))}
