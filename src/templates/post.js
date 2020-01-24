@@ -52,7 +52,7 @@ const Post= (props)=>{
           <Parser data={StaticPage.content}/>
           </div>
         </div>
-        {acf && <Gallery acfArr={inlineArr}/>}
+        {inlineArr[0]!==null && <Gallery acfArr={inlineArr}/>}
       </div>
     </Layout>
     )
