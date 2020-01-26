@@ -8,6 +8,8 @@ body{
     font-family: 'Open Sans', sans-serif !important;
     font-weight: 400;
     color: $primary;
+    background-image:url(../images/background.svg);
+   
 }
 h1{
     font-weight: 500; 
@@ -17,6 +19,35 @@ h1{
 .about-h2{
     font-size: 2rem;
     margin:2rem;
+}
+.introH1{
+    margin: 4rem 0 3rem 2rem;
+}
+.catContainer{
+    width:100vw;
+    max-width: 1400px;
+    display: flex;
+    margin-left:.5rem;
+    justify-content: left;
+    @media screen and (max-width:972px){
+        flex-wrap: wrap;
+    }
+    flex-wrap: wrap;
+    button{
+        background: transparent;
+        margin:.15rem;
+        width:100px;
+        min-height:2rem;
+    }
+    button:hover{
+        background:$green;
+        color:white;
+    }
+    button:focus,button:active{
+        background:rgba(102, 188, 69,.1);
+        color:$green;
+    }
+    
 }
 //contact form styles *******************
 .formContainer{
