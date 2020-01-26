@@ -1,15 +1,21 @@
 .mainPostContainer{
+    padding-top:2rem;
+    padding-bottom: 5rem;
+    border-bottom:1px solid rgb(186, 186, 186);
     display:flex;
-    justify-content:space-evenly;
+    justify-content:left;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    margin:0 auto;
+    width:95%;
+    
+}
 
+@media screen and (max-width:590px) {
+    .mainPostContainer{
+        justify-content: center;
+    }
 }
-h1{
-    margin-top:10rem;
-    font-size: 20rem;
-}
-.postContainer{
+.postContainer{  
 @media screen and (max-width:274px) {
    width: 175px; 
    margin:.5rem;
