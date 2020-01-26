@@ -2,9 +2,11 @@
     background:#66BC45;
     display:block;
     justify-content: space-between;
-    widows: 100vw;
-    margin:1rem -1rem -2rem -1rem;
-    padding: 1rem;
+    width: 100vw;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    margin:0;
+    max-width: 1400px;
     div{
         margin: 1rem;
     }
