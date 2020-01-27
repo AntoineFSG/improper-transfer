@@ -1,15 +1,23 @@
 .imgContainer{
-    margin:1rem;
+        margin:1rem;
         min-width: 180px;
         max-width: 380px;
         -webkit-box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4); 
         box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
         cursor: pointer;
+        height:100%;
+        
+        border-radius:12px 12px 0 0;
 }
-.title{
-    transform: translateY(-50%);
+.imgContainer:focus,.imgContainer:hover{
+    border:3px  #66BC45 solid;
+}
+
+.title{ 
     padding: .25rem;
     background: #66BC45;
     color:white;
     border-radius:9px 9px 0 0;
 }
+
+

@@ -27,10 +27,18 @@
         height:100%;
         .logo{
             width:47px;
+            
+        }
+        .logoLink{
+            width:50px;
+            height:41px;
             position :absolute;
             top:0px;
-            margin-top: -.7rem;
+            margin-top:2px;
             left:15px;
+        }
+        .logoLink:focus{
+            border:3px  #66BC45 solid;
         }
         a{
             outline:0;

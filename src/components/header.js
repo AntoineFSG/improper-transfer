@@ -10,7 +10,7 @@ const Header = (props) => {
   const logo = props.logo
   return (
       <div className={headerStyles.header}>
-        <div className={headerStyles.homecontainer}><Link to="/">
+        <div className={headerStyles.homecontainer}><Link to="/" className={headerStyles.logoLink}>
           <Img className={headerStyles.logo} alt={siteMetadata.title} fluid={logo}/></Link>
         </div>
         <div className={headerStyles.navbarcontainer}>

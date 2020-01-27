@@ -8,7 +8,7 @@ export default class Modal extends React.Component {
       }
       return (
         <div className={modalStyles.modal}>
-        <button className={modalStyles.toggleButton}>
+        <button onClick={this.props.handleClick} className={modalStyles.toggleButton}>
               X
         </button>
           <div className={modalStyles.modalImage}>{this.props.children}</div>

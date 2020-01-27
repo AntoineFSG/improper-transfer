@@ -9,18 +9,22 @@ const GalleryItem=(props)=>{
     const alt = props.alt;
     const title= props.title;
     const [show, setShow] = useState(false);
-    const showModal = e => {
+    const showModal = () => {
         setShow(!show);
       };
-    
+    const handleClick=(e)=>{
+        e.preventDefault();
+        showModal();
+    }
+    const handleKeyPress=(e)=>{
+        if (e.key === "Tab"){return}else{showModal();}
+    }
     return (
-        <div className={galleryItemStyles.imgContainer} onClick={e => {
-            showModal(e);
-       }}>
+        <div tabindex="0" role="button" className={galleryItemStyles.imgContainer} onClick={handleClick} onKeyDown={handleKeyPress}>
             <p className={galleryItemStyles.title}>{title}</p>
             <Img fluid={fluid} alt={alt}/>
-            <Modal show={show}>
-                <Img fluid={fluid}/>
+            <Modal show={show} handleClick={handleClick}>
+                <Img fluid={fluid} alt={alt}/>
             </Modal>
         </div>
     )
