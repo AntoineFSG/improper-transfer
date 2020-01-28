@@ -14,15 +14,15 @@ const ContactMe = () => {
     <div className="formContainer">
     <form method="post" action="https://getform.io/f/3fd17b8c-d675-4171-a7cf-b0b4bb1e053a">
   <label for="email">
-    Email
+    Email{"\n"}
     <input  type="email" name="email" id="email" />
   </label>
   <label for="name">
-    Name
+    Name{"\n"}
     <input type="text" name="name" id="text"/>
   </label>
   <label for="message">
-    Message
+    Message{"\n"}
     <textarea rows="15" type="text" name="message" id="message"></textarea> 
   </label>
   <button type="submit">Send</button>
