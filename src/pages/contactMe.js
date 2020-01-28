@@ -25,7 +25,7 @@ const ContactMe = () => {
     Message{"\n"}
     <textarea rows="15" type="text" name="message" id="message"></textarea> 
   </label>
-  <button type="submit">Send</button>
+  {"\n"}<button type="submit">Send</button>
 </form>
     </div>
   </Layout>
