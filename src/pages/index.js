@@ -81,7 +81,7 @@ const IndexPage = () => {
     <h1 className="introH1">The <span>Design Work</span> of  Ian McGillivray</h1>
     <div className="catContainer">
     {categories.map(node => (
-      <button id={node.id} onClick={()=>{setActive(node);
+      <button id={node.id} key={node.id} onClick={()=>{setActive(node);
       console.log(active)}}>
         {node.name}
       </button>
