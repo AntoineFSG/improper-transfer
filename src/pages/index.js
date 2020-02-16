@@ -80,14 +80,17 @@ const IndexPage = () => {
     <SEO title="Home of Improper design" />
     <h1 className="introH1">The <span>Design Work</span> of  Ian McGillivray</h1>
     <div className="catContainer">
-    {categories.map(node => (
-      <button id={node.id} key={node.id} onClick={()=>{setActive(node);
-      console.log(active)}}>
-        {node.name}
-      </button>
-    ))}
+      
+        {categories.map(node => (
+          <button id={node.id} key={node.id} onClick={()=>{setActive(node);
+          console.log(active)}}>
+            {node.name}
+          </button>
+        ))}
     </div>
-    <PostList data={getFilteredPosts(posts,active)} activeCat={active}/>
+    <div className="postContainer">
+      <PostList data={getFilteredPosts(posts,active)} activeCat={active}/>
+    </div>
   </Layout>
 )}
 

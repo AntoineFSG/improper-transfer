@@ -47,8 +47,8 @@ const Layout = (props) => {
   return (
     <div className={layoutStyles.main}>
       <Header logo={data.file.childImageSharp.fluid} pagesData={data.allWordpressPage} wordpressSiteTitle={data.wordpressSiteMetadata.name} siteMetadata={data.site.siteMetadata} />
-      <content>{props.children}</content>
-       <Footer siteMetadata={data.site.siteMetadata}/>
+      <main>{props.children}</main>
+      <Footer siteMetadata={data.site.siteMetadata}/>
     </div>
   )
 }
