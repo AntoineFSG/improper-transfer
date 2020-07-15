@@ -15,9 +15,6 @@
         }
         button{ 
             color:royalblue;
-            display:flex;
-            align-items:center;
-            justify-content:center;
             margin:0 2rem;
             margin-top:22px;
             background: transparent;
@@ -25,6 +22,7 @@
             border-radius: .5rem;
             
             span{
+                margin-top:10px;
                 height:2rem;
                 display: block;
                 transform: translateY(-50%);
